@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OnCue Support</title>
+<style>
+  :root { --text: #1c1b1f; --muted: #5f5f66; --bg: #ffffff; --link: #1e88e5;
+          --code-bg: #f1f1f4; --note-bg: #e8f0fe; }
+  @media (prefers-color-scheme: dark) {
+    :root { --text: #e6e1e5; --muted: #a8a3ab; --bg: #141218; --link: #64b5f6;
+            --code-bg: #24222a; --note-bg: #1d2a3a; }
+  }
+  body { margin: 0; background: var(--bg); color: var(--text);
+         font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 32px 16px 48px; }
+  h1 { font-size: 28px; margin: 0 0 4px; }
+  h2 { font-size: 21px; margin: 36px 0 8px; }
+  h3 { font-size: 17px; margin: 20px 0 6px; }
+  p, li { margin: 6px 0; }
+  .date { color: var(--muted); margin-bottom: 20px; }
+  a { color: var(--link); }
+  pre { background: var(--code-bg); padding: 12px; border-radius: 8px;
+        overflow-x: auto; font-size: 14px; line-height: 1.45; white-space: pre; }
+  code { background: var(--code-bg); padding: 1px 4px; border-radius: 4px; font-size: 15px; }
+  .note { background: var(--note-bg); padding: 10px 12px; border-radius: 8px; }
+  nav li { margin: 2px 0; }
+</style>
+</head>
+<body>
+<main>
+<h1>OnCue Support</h1>
+<p class="date">Last updated: 7 November 2026</p>
+
+<p>OnCue is a rehearsal partner for actors. You say the lines of your character.
+OnCue says the lines of the other characters.</p>
+
+<nav>
+<ul>
+  <li><a href="#prepare">Prepare a play file</a></li>
+  <li><a href="#import">Import a play</a></li>
+  <li><a href="#rehearse">Rehearse a role</a></li>
+  <li><a href="#microphone">If OnCue does not hear you</a></li>
+  <li><a href="#pro">OnCue Pro subscription</a></li>
+  <li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<!-- ============================================================ -->
+<h2 id="prepare">Prepare a play file</h2>
+
+<p>OnCue reads plays in English. The file can be a text file (.txt), a Word file (.docx)
+or a Final Draft file (.fdx).</p>
+
+<h3>Format of a .txt or .docx file</h3>
+<ul>
+  <li>Write the title of the play on the first line.</li>
+  <li>Write <code>CHARACTERS:</code> on a line. Under it, write one character on each line:
+      the name in capital letters, a comma and a short description.</li>
+  <li>Write each line of dialogue as the name in capital letters, a colon and the text.</li>
+  <li>Write stage directions in parentheses. OnCue does not say them.</li>
+  <li>To add a pause, write a stage direction with the number of seconds.</li>
+</ul>
+
+<p>Example:</p>
+<pre>THE LAST TRAIN
+
+CHARACTERS:
+ANA, a woman of about 30
+VOICE, the voice from the station loudspeaker
+
+(An empty station, at night.)
+
+ANA (to the loudspeaker): Good evening. Is there another train tonight?
+VOICE: There is one more, Ana. The last one.
+(Pause 5 seconds.)
+ANA: No. This time I stay.</pre>
+
+<h3>Pauses</h3>
+<ul>
+  <li><code>(Pause 5 seconds.)</code> makes a pause of 5 seconds before the next line.</li>
+  <li><code>(Pause.)</code> makes a pause of 1 second.</li>
+  <li><code>(Beat.)</code> makes a pause of 2.5 seconds.</li>
+  <li>Put the pause before a line, at the start of a line or at the end of the line before it.</li>
+</ul>
+
+<h3>Final Draft files</h3>
+<p>OnCue reads the character names, the dialogue, the parentheticals and the action
+of a Final Draft file (.fdx). You do not have to change the file.</p>
+
+<!-- ============================================================ -->
+<h2 id="import">Import a play</h2>
+
+<p><strong>Before you start:</strong></p>
+<ul>
+  <li>You need OnCue Pro to import your plays. Without OnCue Pro, you can rehearse the sample plays.</li>
+  <li>Put the play file in the Files app of your iPad or iPhone. For example, use AirDrop or iCloud Drive.</li>
+</ul>
+
+<p><strong>Copy a play from a Mac with a cable:</strong></p>
+<ol>
+  <li>Connect the iPad or iPhone to the Mac with a cable.</li>
+  <li>On the Mac, open Finder. In the sidebar, click your iPad or iPhone.</li>
+  <li>Click <strong>Files</strong>.</li>
+  <li>Drag the play file onto <strong>OnCue</strong>.</li>
+</ol>
+<!-- NOT VERIFIED: the Finder "Files" tab with the OnCue folder was not seen on a device. -->
+
+<p><strong>Import the play:</strong></p>
+<ol>
+  <li>Open OnCue.</li>
+  <li>Tap <strong>Import play</strong>. The Files window opens.</li>
+  <li>Find the play file and tap it.
+      <br>OnCue shows "Reading the play...". Then the play is at the top of the list.</li>
+</ol>
+<!-- NOT VERIFIED: the names in the Files window on iPad (Browse, On My iPad); .fdx files may show in gray on iPad. -->
+
+<p><strong>If an error occurs:</strong></p>
+<ul>
+  <li><strong>"Import failed" and "No lines found. Check the format of the play."</strong>
+      OnCue found no lines of dialogue. Check that each line starts with the name in
+      capital letters and a colon. See <a href="#prepare">Prepare a play file</a>.</li>
+  <li><strong>"Unknown words"</strong>: the voice cannot say these words, and it skips them.
+      This happens with some names and rare words. To change this, write the word with
+      a more common spelling in the play file. Then import the play again.</li>
+</ul>
+
+<!-- ============================================================ -->
+<h2 id="rehearse">Rehearse a role</h2>
+
+<p><strong>Before you start:</strong></p>
+<ul>
+  <li>Allow OnCue to use the microphone. iPadOS and iOS ask you the first time.</li>
+  <li>Rehearse in a quiet room.</li>
+</ul>
+
+<p><strong>Steps:</strong></p>
+<ol>
+  <li>In the list of plays, tap the play.</li>
+  <li>Under <strong>You play</strong>, choose your character.
+      <br>Your lines have a gray background.</li>
+  <li>Optional: under the name of each other character, choose a voice for that character.</li>
+  <li>Optional: in the last field of the first row, choose the pause before OnCue speaks.
+      The default is 0 seconds. The maximum is 2 seconds.</li>
+  <li>Tap <strong>Start</strong>.
+      <br>The line that is said now has a stronger gray background.</li>
+  <li>When OnCue shows "Listening to you...", say your line.
+      <br>OnCue shows "Heard:" and the text it heard. When you finish the line, OnCue continues.</li>
+  <li>To stop for a short time, tap <strong>Pause</strong>. To continue, tap <strong>Resume</strong>.</li>
+  <li>To stop the rehearsal, tap <strong>Stop</strong>.
+      <br>At the end of the play, OnCue shows "End of the play.".</li>
+</ol>
+
+<p class="note">The first rehearsal of a play can start more slowly. OnCue shows
+"Preparing the voice..." while it makes the voices. The next rehearsals start faster.</p>
+
+<!-- ============================================================ -->
+<h2 id="microphone">If OnCue does not hear you</h2>
+
+<p>The bar at the top of the screen shows the volume of the microphone.
+When you speak, the bar moves.</p>
+
+<ul>
+  <li><strong>The bar does not move.</strong> OnCue cannot use the microphone.
+      Open Settings, then Privacy &amp; Security, then Microphone. Turn on OnCue.
+      Then close OnCue and open it again.</li>
+  <li><strong>"Microphone error" and "OnCue has no permission to use the microphone."</strong>
+      Do the same steps as above.</li>
+  <li><strong>The bar moves only a little.</strong> Move the sensitivity slider next to
+      the bar to the right. Then say your line again.</li>
+  <li><strong>OnCue does not continue after your line.</strong> Say the last words of the line
+      clearly. OnCue continues when it hears the end of the line.</li>
+</ul>
+<!-- NOT VERIFIED: the exact names in Settings (Privacy & Security > Microphone) on the iPadOS version of the user. -->
+
+<!-- ============================================================ -->
+<h2 id="pro">OnCue Pro subscription</h2>
+
+<p>OnCue Pro lets you import your plays and rehearse any role.
+Without OnCue Pro, you can rehearse the sample plays.</p>
+
+<h3>Start OnCue Pro</h3>
+<ol>
+  <li>Tap <strong>OnCue Pro</strong> or <strong>Import play</strong>. The OnCue Pro window opens.</li>
+  <li>Read the price and the conditions.</li>
+  <li>Tap <strong>Try 7 days free</strong>.</li>
+  <li>Confirm the purchase in the App Store window.
+      <br>The lock icons in the list of plays go away.</li>
+</ol>
+<p>New subscribers get the first 7 days free. Then the subscription renews every month
+until you cancel it.</p>
+
+<h3>Use OnCue Pro on a new device</h3>
+<ol>
+  <li>Sign in with the same Apple Account that you used to buy OnCue Pro.</li>
+  <li>Open OnCue and tap <strong>OnCue Pro</strong>.</li>
+  <li>Tap <strong>Restore Purchases</strong>.</li>
+</ol>
+<p>If OnCue shows "No active OnCue Pro subscription was found for this Apple Account.",
+check that you use the correct Apple Account.</p>
+
+<h3>Cancel OnCue Pro</h3>
+<ol>
+  <li>Open Settings.</li>
+  <li>Tap your name, then <strong>Subscriptions</strong>.</li>
+  <li>Tap <strong>OnCue Pro</strong>, then <strong>Cancel Subscription</strong>.</li>
+</ol>
+<p>Cancel at least 24 hours before the end of the period. After the period ends, your plays
+stay in OnCue, but you can rehearse only the sample plays.</p>
+<!-- NOT VERIFIED: the exact names in Settings > your name > Subscriptions on the iPadOS version of the user. -->
+
+<!-- ============================================================ -->
+<h2 id="contact">Contact</h2>
+<p>For questions or problems, write to
+<a href="mailto:hognogi.apps@gmail.com">hognogi.apps@gmail.com</a>.
+Tell us the model of your device and what you see on the screen.</p>
+
+<p><a href="privacy.html">Privacy Policy</a></p>
+</main>
+</body>
+</html>
